@@ -9,6 +9,18 @@ import SpecialOffer from './SpecialOffer';
 
 const App = () => {
     const specialOffer = pizzas.find((item) => item.specialOffer);
+
+    // useEffect(() => {
+    //   const listener = () => {
+    //     alert('Hello');
+    //   };
+    //   document.addEventListener('mousedown', listener);
+
+    //   return () => {
+    //     document.removeEventListener('mousedown', listener);
+    //   };
+    // }, []);
+
     return(
         <AppStateProvider>
             <div className={AppCss.container}>
